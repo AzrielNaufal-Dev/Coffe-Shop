@@ -42,7 +42,7 @@ A responsive landing page for Seduh Aja, a coffee shop. It showcases the shop's 
 
 - **Email:** [azrielnaufalr@gmail.com](mailto:azrielnaufalr@gmail.com)
 - **Phone / WhatsApp:** [+62 888 3838 694](https://wa.me/628883838694)
-- **GitHub:** [Cclover-ops](https://github.com/Cclover-ops)
+- **GitHub:** [AzrielNaufal-Dev](https://github.com/AzrielNaufal-Dev)
 - **LinkedIn:** [Azriel Naufal Robie](https://linkedin.com/in/azriel-naufal-r-1ab12b361)
 
 ## Copyright
