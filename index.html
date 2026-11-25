@@ -3,287 +3,129 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>coffe shop</title>
+        <title>Seduh Aja | Coffee Shop</title>
+        <script src="script.js"></script>
         <script src="https://cdn.tailwindcss.com/"></script>
-        <link rel="stylesheet" href="style.css">       
+        <link rel="stylesheet" href="style.css">
     </head>
- 
-    <body class="overflow-x-hidden">
-        <section class="nav">
-            <nav class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-sm shadow-md">
-                <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 flex justify-between items-center ">
-                    <img src="img/Coffee Logo for Cafes and Brands.jpg" alt="" width="40" class="rounded-full border shadow-lg">
-                    <ul class="hidden sm:flex gap-6 text-gray-300">
-                        <li><a href="#home" class="transition duration-200 hover:text-gray-500 hover:border-b-2 border-black/20">home</a></li>
-                        <li><a href="#menu" class="transition duration-200 hover:text-gray-500 hover:border-b-2 border-black/20">menu</a></li>
-                        <li><a href="#about" class="transition duration-200 hover:text-gray-500 hover:border-b-2 border-black/20">about</a></li>
-                        <li><a href="#contact" class="transition duration-200 hover:text-gray-500 hover:border-b-2 border-black/20">contact</a></li>
-                    </ul>
-                    <div class="sm:hidden">
-                        <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div id="mobile-menu" class="hidden sm:hidden">
-                    <ul class="px-2 pt-2 pb-3 space-y-1">
-                        <li><a href="#home" class="block text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">home</a></li>
-                        <li><a href="#menu" class="block text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">menu</a></li>
-                        <li><a href="#about" class="block text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">about</a></li>
-                        <li><a href="#contact" class="block text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
 
-        <section id="home">
-            <div class="bg-cover bg-bottom flex flex-col pt-16"
-                style="background-image: url(img/iner.jpg);">
-
-                <div class="style">
-                        <div class="w-72 h-14 bg-sky-90 mx-auto flex justify-center items-center mt-10 sm:mt-20">
-                            <h1 class="text-4xl sm:text-5xl text-[#f3e9dc] font-bold font-myfont">SEDUH AJA</h1>
-                        </div>
-
-                    <div class="flex flex-col md:flex-row justify-between py-16 sm:py-32 px-6 sm:px-14 items-center">
-                        <div class=" bg-sky-90 flex flex-col gap-2 text-center md:text-left">
-
-                            <div class="w-full md:w-[320px] h-[20px] flex justify-center md:justify-start items-center mt-10 md:mt-20">
-                                <h1 class="text-lg sm:text-xl text-[#f3e9dc] font-vintage">More than Coffe, It's an Experience</h1>
-                            </div>
-
-                            <div class="mt-8">
-                                <div class="text-lg bg-sky- w-full h-16 flex justify-center md:justify-start items-center">
-                                    <a href="#menu" class="w-40 h-12 bg-[#5e3023] border-4 border-[#5e3023] flex rounded-full justify-center items-center hover:bg-transparent duration-150 group">
-                                        <h1 class="text-base text-[#f3e9dc] group-hover:text-[#5e3023]"
-                                            style="font-family:lucida sans;">See Our Menu</h1>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 md:mt-0">
-                            <div class="w-36 h-48 sm:w-48 sm:h-60 ">
-                                <div class="h-full bg-cover bg-center rounded-xl shadow-xl -skew-y-6 border-2 border-[#5e3023] hover:ring-4 ring-[#f3e9dc] duration-200"
-                                    style="background-image: url(img/iner.jpg);"></div>
-                            </div>
-                            <div class="w-36 h-48 sm:w-48 sm:h-60 ">
-                                <div class="h-full bg-cover bg-center rounded-xl shadow-xl skew-y-6 border-2 border-[#5e3023] hover:ring-4 ring-[#f3e9dc] duration-200"
-                                    style="background-image: url(img/io.jpg);"></div>
-                            </div>
-                            <div class="w-36 h-48 sm:w-48 sm:h-60 ">
-                                <div class="h-full bg-cover bg-center rounded-xl shadow-xl -skew-y-6 border-2 border-[#5e3023] hover:ring-4 ring-[#f3e9dc] duration-200"
-                                    style="background-image: url(img/barista.jpg);"></div>
-                            </div>
-                            <div class="w-36 h-48 sm:w-48 sm:h-60 ">
-                                <div class="h-full bg-cover bg-center rounded-xl shadow-xl skew-y-6 border-2 border-[#5e3023] hover:ring-4 ring-[#f3e9dc] duration-200"
-                                    style="background-image: url(img/barista2.jpg);"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="menu" class="relative">
-            <div class="bg-[#f3e9dc] flex flex-col pb-16">
-
-                <div class="w-72 h-14 bg-sky-90 mx-auto flex flex-col justify-center items-center mt-5 mb-10 relative">
-                    <h1 class="text-4xl sm:text-5xl text-[#5e3023] font-bold font-sunflower">Menu</h1>
-                </div>
-
-                <div class="w-[300px] h-16 bg-sky-90 mx-auto flex flex-col justify-center items-center relative">
-                    <h2 class="text-2xl sm:text-3xl text-[#5e3023] font-cursive">Best Selling Product</h2>
-                </div>
-
-                    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 py-10 px-10 justify-around z-30 relative">
-                        <div class="bg-[#c08552] h-72 w-full rounded-xl relative hover:ring-2 ring-white">
-
-                            <div class="flex h-full w-full justify-center items-center group relative z-20">
-                                <img src="img/icecapucino.png" alt="ice capucino"
-                                class="drop-shadow-[10px_10px_15px_rgba(0,0,0,0.9)] 
-                                    mx-auto absolute max-h-[180px] sm:max-h-[250px]
-                                    group-hover:scale-150 group-hover:rotate-45 
-                                    group-hover:drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)] 
-                                    duration-500 pointer-events-none"/>
-
-                                <div class="flex justify-center items-end w-full h-full">
-                                    <div class="absolute w-full h-10 bg-black/30 rounded-b-xl flex justify-center items-center group-hover:ring-2 ring-white">
-                                        <h1 class="text-md sm:text-xl text-white font-serif">Ice Cappucino</h1>
-                                    </div>
-                                </div>   
-                            </div>
-
-                        </div>
-    
-                        <div class="bg-[#c08552] h-72 w-full rounded-xl relative hover:ring-2 ring-white">
-
-                            <div class="flex h-full justify-center items-center group relative z-20">
-                                <img src="img/icelatte.png" alt="ice latte"
-                                class="drop-shadow-[10px_10px_15px_rgba(0,0,0,0.9)] 
-                                    mx-auto absolute  max-h-[140px] sm:max-h-[200px]
-                                    group-hover:scale-150 group-hover:rotate-45 
-                                    group-hover:drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)] 
-                                    duration-500 delay-100 pointer-events-none"/>
-
-                                <div class="flex justify-center items-end w-full h-full">
-                                    <div class="absolute w-full h-10 bg-black/30 rounded-b-xl flex justify-center items-center group-hover:ring-2 ring-white">
-                                        <h1 class="text-md sm:text-xl text-white font-serif">Ice Coffe Latte</h1>
-                                    </div>
-                                </div>   
-                            </div>
-
-                        </div>
-    
-                        <div class="bg-[#c08552] h-72 w-full rounded-xl relative hover:ring-2 ring-white">
-
-                            <div class="flex h-full w-full justify-center items-center group relative z-20">
-                                <img src="img/iceamericano.png" alt="ice americano"
-                                class="drop-shadow-[10px_10px_15px_rgba(0,0,0,0.9)] 
-                                    mx-auto absolute max-h-[160px] sm:max-h-[220px]
-                                    group-hover:scale-150 sm:group-hover:scale-150 group-hover:rotate-45 
-                                    group-hover:drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)] 
-                                    duration-500 pointer-events-none"/>
-
-                                <div class="flex justify-center items-end w-full h-full">
-                                    <div class="absolute w-full h-10 bg-black/30 rounded-b-xl flex justify-center items-center group-hover:ring-2 ring-white">
-                                        <h1 class="text-md sm:text-xl text-white font-serif">Ice Americano</h1>
-                                    </div>
-                                </div>   
-                            </div>
-
-                        </div>
-
-                        <div class="bg-[#c08552] h-72 w-full rounded-xl relative hover:ring-2 ring-white">
-
-                            <div class="flex h-full w-full justify-center items-center group relative z-20">
-                                <img src="img/icematcha.png" alt="ice matcha"
-                                class="drop-shadow-[10px_10px_15px_rgba(0,0,0,0.9)] 
-                                    mx-auto absolute max-h-[170px] sm:max-h-[240px]
-                                    group-hover:scale-[1.5] group-hover:rotate-45 
-                                    group-hover:drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)] 
-                                    duration-500 pointer-events-none"/>
-
-                                <div class="flex justify-center items-end w-full h-full">
-                                    <div class="absolute w-full h-10 bg-black/30 rounded-b-xl flex justify-center items-center group-hover:ring-2 ring-white">
-                                        <h1 class="text-md sm:text-xl text-white font-serif">Ice Matcha Latte</h1>
-                                    </div>
-                                </div>   
-                            </div>
-
-                        </div>
-
-                        <div class="bg-[#c08552] h-72 w-full rounded-xl relative hover:ring-2 ring-white ml-[95px] md:ml-0">
-
-                            <div class="flex h-full w-full justify-center items-center group relative z-20">
-                                <img src="img/mangojuice.png" alt="mango juice"
-                                class="drop-shadow-[10px_10px_15px_rgba(0,0,0,0.9)] 
-                                    mx-auto absolute scale-110 sm:scale-110 md:scale-110
-                                    group-hover:scale-150 sm:group-hover:scale-90 md:group-hover:scale-150 group-hover:rotate-45 
-                                    group-hover:drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)] 
-                                    duration-500 pointer-events-none"/>
-
-                                <div class="flex justify-center items-end w-full h-full">
-                                    <div class="absolute w-full h-10 bg-black/30 rounded-b-xl flex justify-center items-center group-hover:ring-2 ring-white">
-                                        <h1 class="text-md sm:text-xl text-white font-serif">Ice Mango Juice</h1>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-lg bg-sky- w-full h-16 flex justify-center sm:justify-end items-center px-10">
-                        <a href="#" class="w-48 h-12 bg-[#5e3023] border-4 border-[#5e3023] flex rounded-full justify-center items-center hover:bg-transparent duration-150 group">
-                            <h1 class="text-base text-[#f3e9dc] group-hover:text-[#5e3023]"
-                                style="font-family:lucida sans;">See More Menu -></h1>
-                        </a>
-                    </div>
-
-                    <!-- <div class="absolute h-full w-full z-0 pointer-events-none flex flex-wra ">
-                        <div class="bg-[#5e3023]/20 w-80 h-72 absolute top-52 right-[80px] rotate-45 rounded-xl hidden sm:top-48 sm:right-14 sm:rotate-45 sm:w-96 sm:h-80 sm:hidden"></div>
-                        <div class="bg-[#5e3023]/20 w-80 h-72 absolute top-52 right-[80px] rotate-45 rounded-xl hidden sm:top-48 sm:right-48 sm:rotate-45 sm:w-96 sm:h-80 sm:hidden"></div>
-                        <div class="bg-[#5e3023]/20 w-80 h-72 absolute top-[800px] left-[85px] rotate-45 rounded-xl hidden sm:top-48 sm:left-14 sm:rotate-45 sm:w-96 sm:h-80 sm:hidden"></div>
-                        <div class="bg-[#5e3023]/20 w-80 h-72 absolute top-[800px] left-[85px] rotate-45 rounded-xl hidden sm:top-48 sm:left-48 sm:rotate-45 sm:w-96 sm:h-80 sm:hidden"></div>
-                    </div> -->
-            </div>
-        </section>
-        
-        <section id="about" class="py-16 bg-gradient-to-r from-[#5e3023] to-[#c08552]">
-            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6 text-white">
-              
-              <div class="md:w-1/2 space-y-6 text-center md:text-left">
-                <h2 class="text-4xl font-bold">Our Story</h2>
-                <p class="text-lg leading-relaxed text-[#f3e9dc]">
-                  Dari awal berdiri, tujuan kami sederhana: menyajikan kopi terbaik
-                  dengan pengalaman yang tak terlupakan. Suasana nyaman,
-                  rasa autentik, dan pelayanan penuh kehangatan.
-                </p>
-                <button class="px-6 py-3 bg-[#f3e9dc] text-[#5e3023] font-semibold rounded-lg shadow-md hover:bg-white transition">
-                  Discover More
+    <body class="overflow-x-hidden bg-[#f3e9dc] text-[#2b211d]">
+        <nav class="fixed top-0 left-0 z-50 w-full bg-[#2b211d] text-[#f3e9dc]">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+                <a href="#home" aria-label="Seduh Aja, return to homepage">
+                    <img src="img/Coffee Logo for Cafes and Brands.webp" alt="Seduh Aja logo" width="40" height="40" class="rounded-full">
+                </a>
+                <ul class="hidden items-center gap-8 sm:flex">
+                    <li><a href="#home" class="transition-colors hover:text-[#c08552]">Home</a></li>
+                    <li><a href="#best-sellers" class="transition-colors hover:text-[#c08552]">Best Sellers</a></li>
+                    <li><a href="#about" class="transition-colors hover:text-[#c08552]">About</a></li>
+                    <li><a href="#contact" class="transition-colors hover:text-[#c08552]">Contact</a></li>
+                </ul>
+                <button id="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="text-[#f3e9dc] hover:text-[#c08552] focus:outline-none sm:hidden">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
                 </button>
-              </div>
-              
-              <div class="md:ml-40 h-64 w-64 sm:h-96 sm:w-96 md:w-[500px]">
-                <div class="h-full w-full bg-cover rounded-2xl border-2 border-[#f3e9dc]"
-                    style="background-image: url(img/about.jpg);"></div>
-              </div>
-          
             </div>
-          </section>
-          
-          <section id="contact">
-            <div class="h-auto py-12 bg-gradient-to-b from-[#5e3023] to-[#c08552]">
-                <div class="h-full w-full flex flex-wrap gap-y-8 gap-x-12 justify-center items-center px-10">
+            <div id="mobile-menu" class="hidden border-t border-white/10 sm:hidden">
+                <ul class="space-y-1 px-4 py-3">
+                    <li><a href="#home" class="block rounded px-3 py-2 hover:bg-white/10">Home</a></li>
+                    <li><a href="#best-sellers" class="block rounded px-3 py-2 hover:bg-white/10">Best Sellers</a></li>
+                    <li><a href="#about" class="block rounded px-3 py-2 hover:bg-white/10">About</a></li>
+                    <li><a href="#contact" class="block rounded px-3 py-2 hover:bg-white/10">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-                    <div class="bg-sky-900 w-24 h-24 sm:w-32 sm:h-32 rounded-full flex justify-center items-center">
-                        <a href="https://wa.me/628883838694" 
-                            class="h-full w-full rounded-full bg-cover hover:brightness-75 duration-300"
-                            style="background-image: url(img/Whatsapp.jpg);">
+        <main>
+            <section id="home" class="relative isolate flex min-h-[680px] items-center overflow-hidden pt-16 text-[#f3e9dc]">
+                <img src="img/iner-hero-optimized.webp" alt="" width="1600" height="900" fetchpriority="high" loading="eager" decoding="async" class="absolute inset-0 -z-10 h-full w-full object-cover object-center">
+                <div class="absolute inset-0 -z-10 bg-black/55"></div>
+                <div class="mx-auto grid min-h-[620px] w-full max-w-7xl items-center gap-12 px-6 py-20 sm:px-10 md:grid-cols-2">
+                    <div class="hero-intro text-center md:text-left">
+                        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-[#e2bd96]">Coffee, made with care</p>
+                        <h1 class="font-myfont text-6xl sm:text-7xl">Seduh Aja</h1>
+                        <p class="mx-auto mt-5 max-w-lg text-lg leading-relaxed text-[#f3e9dc] md:mx-0">
+                            More than coffee, discover flavors and a welcoming atmosphere that make you feel at home.
+                        </p>
+                        <a href="#best-sellers" class="mt-8 inline-flex rounded-full border border-[#e2bd96] bg-[#5e3023] px-7 py-3 font-semibold text-white transition-colors hover:bg-[#754535]">
+                            Explore Best Sellers
                         </a>
-                    </div>      
-
-                    <div class="bg-sky-900 w-24 h-24 sm:w-32 sm:h-32 rounded-full flex justify-center items-center">
-                        <a href="#"
-                        class="h-full w-full rounded-full bg-cover hover:brightness-75 duration-300"
-                        style="background-image: url(img/Instagram.jpg);"></a>
                     </div>
+                    <div class="hidden md:block" aria-hidden="true"></div>
+                </div>
+            </section>
 
-                    <div class="bg-sky-900 w-24 h-24 sm:w-32 sm:h-32 rounded-full flex justify-center items-center">
-                        <a href="https://github.com/Cclover-ops"
-                        class="h-full w-full rounded-full bg-cover hover:brightness-75 duration-300"
-                        style="background-image: url(img/github.jpg);"></a>
+            <section id="best-sellers" class="scroll-mt-16 bg-[#f3e9dc] px-5 py-20 sm:px-8 sm:py-24">
+                <div class="mx-auto max-w-7xl">
+                    <header class="reveal mb-10 text-center sm:mb-14">
+                        <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a6746]">Customer Favorites</p>
+                        <h2 class="font-serif text-3xl font-semibold text-[#5e3023] sm:text-4xl">Best Sellers</h2>
+                        <p class="mt-3 text-[#66564d]">Find your perfect companion for every moment.</p>
+                    </header>
+                    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+                        <article class="product-card reveal overflow-hidden rounded-xl border border-[#e2d2c0] bg-white/60 p-5 text-center transition-colors duration-200 hover:border-[#c08552] hover:bg-white">
+                            <img src="img/icecapucino.png" alt="Ice Cappuccino" width="400" height="400" loading="lazy" decoding="async" class="mx-auto h-48 w-full object-contain">
+                            <h3 class="mt-4 font-serif text-lg font-semibold text-[#5e3023]">Ice Cappuccino</h3>
+                        </article>
+                        <article class="product-card reveal overflow-hidden rounded-xl border border-[#e2d2c0] bg-white/60 p-5 text-center transition-colors duration-200 hover:border-[#c08552] hover:bg-white">
+                            <img src="img/icelatte.png" alt="Ice Coffee Latte" width="400" height="400" loading="lazy" decoding="async" class="mx-auto h-48 w-full object-contain">
+                            <h3 class="mt-4 font-serif text-lg font-semibold text-[#5e3023]">Ice Coffee Latte</h3>
+                        </article>
+                        <article class="product-card reveal overflow-hidden rounded-xl border border-[#e2d2c0] bg-white/60 p-5 text-center transition-colors duration-200 hover:border-[#c08552] hover:bg-white">
+                            <img src="img/iceamericano.png" alt="Ice Americano" width="400" height="400" loading="lazy" decoding="async" class="mx-auto h-48 w-full object-contain">
+                            <h3 class="mt-4 font-serif text-lg font-semibold text-[#5e3023]">Ice Americano</h3>
+                        </article>
+                        <article class="product-card reveal overflow-hidden rounded-xl border border-[#e2d2c0] bg-white/60 p-5 text-center transition-colors duration-200 hover:border-[#c08552] hover:bg-white">
+                            <img src="img/icematcha.png" alt="Ice Matcha Latte" width="400" height="400" loading="lazy" decoding="async" class="mx-auto h-48 w-full object-contain">
+                            <h3 class="mt-4 font-serif text-lg font-semibold text-[#5e3023]">Ice Matcha Latte</h3>
+                        </article>
+                        <article class="product-card reveal overflow-hidden rounded-xl border border-[#e2d2c0] bg-white/60 p-5 text-center transition-colors duration-200 hover:border-[#c08552] hover:bg-white sm:col-span-2 lg:col-span-1">
+                            <img src="img/mangojuice.png" alt="Ice Mango Juice" width="400" height="400" loading="lazy" decoding="async" class="mx-auto h-48 w-full object-contain">
+                            <h3 class="mt-4 font-serif text-lg font-semibold text-[#5e3023]">Ice Mango Juice</h3>
+                        </article>
                     </div>
+                </div>
+            </section>
 
-                    <div class="bg-sky-900 w-24 h-24 sm:w-32 sm:h-32 rounded-full flex justify-center items-center">
-                        <a href="https://linkedin.com/in/azriel-naufal-r-1ab12b361"
-                        class="h-full w-full rounded-full bg-cover hover:brightness-75 duration-300"
-                        style="background-image: url(img/linkedin.jpg);"></a>
+            <section id="about" class="scroll-mt-16 bg-white px-5 py-20 sm:px-8 sm:py-24">
+                <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+                    <div class="reveal">
+                        <p class="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a6746]">About Us</p>
+                        <h2 class="font-serif text-3xl font-semibold leading-tight text-[#5e3023] sm:text-4xl">A welcoming space, with coffee crafted with care.</h2>
+                        <p class="mt-6 max-w-xl text-lg leading-relaxed text-[#66564d]">
+                            From the beginning, our goal has been simple: to serve exceptional coffee and create memorable experiences. Enjoy authentic flavors, a welcoming atmosphere, and a moment to slow down.
+                        </p>
+                        <a href="#contact" class="mt-7 inline-flex rounded-full bg-[#5e3023] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#754535]">Get in Touch</a>
                     </div>
-
-                    <div class="bg-sky-900 w-24 h-24 sm:w-32 sm:h-32 rounded-full flex justify-center items-center">
-                        <a href="mailto:azrielnaufalr@gmail.com"
-                        class="h-full w-full rounded-full bg-cover hover:brightness-75 duration-300"
-                        style="background-image: url(img/gmail.jpg);"></a>
+                    <div class="reveal grid grid-cols-2 gap-3 sm:gap-4">
+                        <img src="img/iner-about-optimized.webp" alt="Warm interior of the coffee shop" width="900" height="506" loading="lazy" decoding="async" class="h-48 w-full rounded-lg object-cover sm:h-64">
+                        <img src="img/io-about-optimized.webp" alt="Comfortable seating area in the shop" width="900" height="600" loading="lazy" decoding="async" class="mt-6 h-48 w-full rounded-lg object-cover sm:mt-8 sm:h-64">
+                        <img src="img/barista-about-optimized.webp" alt="Barista preparing a cup of coffee" width="900" height="1125" loading="lazy" decoding="async" class="h-48 w-full rounded-lg object-cover sm:h-64">
+                        <img src="img/barista2-about-optimized.webp" alt="Barista serving a drink" width="900" height="600" loading="lazy" decoding="async" class="mt-6 h-48 w-full rounded-lg object-cover sm:mt-8 sm:h-64">
                     </div>
+                </div>
+            </section>
+        </main>
 
+        <footer id="contact" class="scroll-mt-16 bg-[#2b211d] px-5 py-12 text-[#f3e9dc] sm:px-8">
+            <div class="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 sm:items-center">
+                <div class="reveal">
+                    <h2 class="font-myfont text-4xl">Seduh Aja</h2>
+                    <p class="mt-2 max-w-md leading-relaxed text-[#d8c8b8]">A place for thoughtfully made coffee, warm hospitality, and good conversation.</p>
+                </div>
+                <div class="reveal sm:text-right">
+                    <h3 class="font-serif text-lg font-semibold">Connect With Us</h3>
+                    <ul class="mt-4 flex flex-wrap gap-4 sm:justify-end">
+                        <li><a href="https://wa.me/628883838694" aria-label="WhatsApp" class="block rounded-full transition-opacity hover:opacity-75"><img src="img/Whatsapp.webp" alt="" width="44" height="44" loading="lazy" decoding="async" class="h-11 w-11 rounded-full"></a></li>
+                        <li><a href="https://github.com/Cclover-ops" aria-label="GitHub" class="block rounded-full transition-opacity hover:opacity-75"><img src="img/github.webp" alt="" width="44" height="44" loading="lazy" decoding="async" class="h-11 w-11 rounded-full"></a></li>
+                        <li><a href="https://linkedin.com/in/azriel-naufal-r-1ab12b361" aria-label="LinkedIn" class="block rounded-full transition-opacity hover:opacity-75"><img src="img/linkedin.webp" alt="" width="44" height="44" loading="lazy" decoding="async" class="h-11 w-11 rounded-full"></a></li>
+                        <li><a href="mailto:azrielnaufalr@gmail.com" aria-label="Email" class="block rounded-full transition-opacity hover:opacity-75"><img src="img/gmail.webp" alt="" width="44" height="44" loading="lazy" decoding="async" class="h-11 w-11 rounded-full"></a></li>
+                    </ul>
                 </div>
             </div>
-          </section>
-          <script>
-            document.getElementById('menu-btn').addEventListener('click', function() {
-                var mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.remove('hidden');
-                } else {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        </script>
-    </body>
+            <p class="mx-auto mt-10 max-w-7xl border-t border-white/15 pt-5 text-sm text-[#d8c8b8]">© 2026 Seduh Aja. Made with care.</p>
+        </footer>
 
+    </body>
 </html>

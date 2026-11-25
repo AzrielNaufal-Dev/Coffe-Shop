@@ -1,37 +1,91 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('font/krinkesregularpersonal.ttf') format('truetype');
+  font-family: "BrandScript";
+  src: url("font/KrinkesRegularPERSONAL.ttf") format("truetype");
+  font-display: swap;
+}
+
+.font-myfont {
+  font-family: "BrandScript", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-intro {
+  animation: rise-in 700ms ease-out both;
+}
+
+.js-motion .reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.js-motion .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.product-card:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.product-card:nth-child(4) {
+  transition-delay: 240ms;
+}
+
+.product-card:nth-child(5) {
+  transition-delay: 320ms;
+}
+
+.product-card img {
+  transition: transform 300ms ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
   }
-  
-.font-myfont{
-  font-family: 'myfont';
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@font-face {
-  font-family: 'vintage';
-  src: url('font/finestvintagepersonaluseony.ttf') format('truetype');
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.font-vintage{
-font-family: 'vintage';
-}
+  .hero-intro {
+    animation: none;
+  }
 
-@font-face {
-  font-family: 'sunflower';
-  src: url('font/SunFlower.ttf') format('truetype');
-}
+  .js-motion .reveal,
+  .js-motion .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 
-.font-sunflower{
-font-family: 'sunflower';
+  .product-card img,
+  .product-card:hover img {
+    transform: none;
+    transition: none;
+  }
 }
-
-@font-face {
-  font-family: 'cursive';
-  src: url('font/cursivesans-bold.ttf') format('truetype');
-}
-
-.font-cursive{
-font-family: 'cursive';
-}
-
-  
